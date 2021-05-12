@@ -9,7 +9,7 @@ namespace Homework_01
     /// <summary>
     /// Класс, описывающий модель работника
     /// </summary>
-    class Worker
+    public class Worker
     {
         /// <summary>
         /// Имя работника

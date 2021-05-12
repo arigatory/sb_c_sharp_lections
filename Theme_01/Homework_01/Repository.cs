@@ -10,7 +10,7 @@ namespace Homework_01
     /// <summary>
     /// Организация хранения и генерации данных
     /// </summary>
-    class Repository
+    public class Repository
     {
         /// <summary>
         /// База данных имён

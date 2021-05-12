@@ -38,7 +38,8 @@ namespace Example_931
             // от ресурса с заданным URI.
             HttpClient hc = new HttpClient(httpClientHandler);
 
-            bot = new TelegramBotClient(token, hc);
+            //bot = new TelegramBotClient(token, hc);
+            bot = new TelegramBotClient(token);
 
             #endregion
 
