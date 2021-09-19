@@ -14,7 +14,7 @@ namespace Example_1616
             while (true)
             {
                 Console.WriteLine($"Write log {DateTime.Now.ToLongTimeString()}");
-                Thread.Sleep(100);
+                Thread.Sleep(1000);
             }   
         }
 

@@ -15,7 +15,7 @@ namespace Example_1661
         {
             Console.WriteLine("Method начал работу.");
 
-            for (int i = 0; i < 20; i++)
+            for (int i = 0; i < 200; i++)
             {
                 Thread.Sleep(500);
                 Console.WriteLine($"Method: i = {i}");
@@ -34,7 +34,7 @@ namespace Example_1661
 
             task.Start();
 
-            for (int i = 0; i < 100; i++)
+            for (int i = 0; i < 200; i++)
             {
                 Console.Write("- ");
                 Thread.Sleep(50);

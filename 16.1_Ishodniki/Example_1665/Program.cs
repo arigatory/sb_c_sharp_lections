@@ -27,7 +27,7 @@ namespace Example_1665
         {
             Console.WriteLine("Main запущен.");
 
-            var t1 = Task.Factory.StartNew(Method);
+            Task t1 = Task.Factory.StartNew(Method);
             var t2 = Task.Factory.StartNew(Method);
 
             // Выполнение задач.
@@ -42,8 +42,8 @@ namespace Example_1665
                 Thread.Sleep(50);
             }
             
-            Task.WaitAll(t1, t2);
-            //Task.WaitAny(t1, t2);
+            //Task.WaitAll(t1, t2);
+            Task.WaitAny(t1, t2);
 
             Console.WriteLine("Main окончен");
             Console.WriteLine($"\nId основного потока равен null : {Task.CurrentId == null}.");

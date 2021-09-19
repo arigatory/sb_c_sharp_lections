@@ -31,9 +31,15 @@ namespace Example_1621
         static void Main(string[] args)
         {
 
-            Thread thread1 = new Thread(ThreadMethod); thread1.Start("В кастрюле борщ "); // Повар 1
-            Thread thread2 = new Thread(ThreadMethod); thread2.Start("В кастрюле каша "); // Повар 2
-            Thread thread3 = new Thread(ThreadMethod); thread3.Start("В кастрюле салатик "); // Повар 2
+            Thread thread1 = new Thread(ThreadMethod); 
+            thread1.Start("В кастрюле борщ "); // Повар 1
+
+            Thread thread2 = new Thread(ThreadMethod); 
+            thread2.Start("В кастрюле каша "); // Повар 2
+
+            Thread thread3 = new Thread(ThreadMethod); 
+            thread3.Start("В кастрюле салатик "); // Повар 2
+
 
             ThreadMethod("В кастрюле компот ");  // Повар 3
 

@@ -44,8 +44,8 @@ namespace Example_1663
                 Thread.Sleep(50);
             }
 
-            //t1.Wait();
-            //t2.Wait();
+            t1.Wait();
+            t2.Wait();
 
             Console.WriteLine("Main окончен");
             Console.WriteLine($"\nId основного потока равен null : {Task.CurrentId == null}.");

@@ -59,16 +59,13 @@ namespace Example_1614
             #region Print
 
 
-            ParameterizedThreadStart pth1 = new ParameterizedThreadStart(Print);
-            Thread thread1 = new Thread(pth1);
-            thread1.Start("+ ");
+            (new Thread(Print)).Start("+ ");
 
             #endregion
 
             #region PrintBag
 
-            ParameterizedThreadStart pth2 = new ParameterizedThreadStart(PrintBag);
-            Thread thread2 = new Thread(pth2);
+            Thread thread2 = new Thread(PrintBag);
             thread2.Start(new Bag(2019, "Курс С#", 20.08));
 
             #endregion
